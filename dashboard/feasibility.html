@@ -478,7 +478,52 @@
             display: none;
         }
 
-        @media (max-width: 860px) {
+                @media (max-width: 860px) {
+            .topbar {
+                padding: 8px 12px;
+                gap: 8px;
+            }
+
+            .brand-section {
+                gap: 8px;
+            }
+
+            .brand-section > div {
+                display: none !important;
+            }
+
+            .main-logo {
+                height: 28px;
+            }
+
+            .top-actions {
+                gap: 8px;
+            }
+
+            .top-actions > a {
+                display: none !important;
+            }
+
+            .top-actions .search-box {
+                width: 120px !important;
+            }
+
+            .top-actions .search-box input {
+                padding: 6px 8px 6px 24px !important;
+                font-size: 0.75rem !important;
+            }
+
+            .top-actions .search-box span {
+                left: 6px !important;
+                font-size: 0.72rem !important;
+            }
+
+            #openProfile {
+                padding: 6px 10px !important;
+                font-size: 0.75rem !important;
+                white-space: nowrap;
+            }
+
             .hamburger {
                 display: inline-flex;
                 align-items: center;
@@ -505,11 +550,6 @@
 
             .sidebar.open {
                 transform: translateX(0);
-            }
-
-            .g2,
-            .g3 {
-                grid-template-columns: 1fr;
             }
 
             .canvas {
