@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="تحسين محركات البحث SEO - تحديد الكلمات المفتاحية الذكية وتحسين هيكلية الصفحات لرفع الترتيب التنافسي في جوجل.">
+    <meta name="keywords" content="سيو, SEO, تحسين محركات البحث, كلمات مفتاحية, ترتيب جوجل, أرشفة المواقع, مركز القيادة التسويقي">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="تحسين محركات البحث SEO — مركز القيادة التسويقي">
+    <meta property="og:description" content="تحسين محركات البحث SEO - تحديد الكلمات المفتاحية الذكية وتحسين هيكلية الصفحات لرفع الترتيب التنافسي في جوجل.">
+    <meta property="og:image" content="https://image2url.com/r2/default/images/1771397424472-d9533f3b-9ef4-43c4-b8bf-bc44ff2ce1f5.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="https://image2url.com/r2/default/images/1771397424472-d9533f3b-9ef4-43c4-b8bf-bc44ff2ce1f5.png">
+    <link rel="apple-touch-icon" href="https://image2url.com/r2/default/images/1771397424472-d9533f3b-9ef4-43c4-b8bf-bc44ff2ce1f5.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحسين محركات البحث SEO — مركز القيادة التسويقي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0b131e;
+            --bg-gradient: radial-gradient(circle at 50% 0%, #152238 0%, #0b131e 100%);
+            --surface-color: rgba(20, 30, 48, 0.45);
+            --surface-color-2: rgba(28, 42, 66, 0.55);
+            --surface-color-3: rgba(40, 60, 90, 0.65);
+            --text-color: #f0f8ff;
+            --muted-color: #9baec4;
+            --border-light: rgba(255, 255, 255, 0.12);
+            --border-medium: rgba(255, 255, 255, 0.22);
+            --border-heavy: rgba(255, 255, 255, 0.35);
+            --accent-primary: #00d2ff;
+            --accent-secondary: #3a7bd5;
+            --accent-gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+            --status-ok: #00fa9a;
+            --shadow-soft: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --blur-md: blur(14px);
+            --transition-smooth: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --font-main: 'Cairo', system-ui, sans-serif;
+            --font-mono: 'Space Mono', monospace;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #e8f2fc;
+            --bg-gradient: radial-gradient(circle at 50% 0%, #ffffff 0%, #e8f2fc 100%);
+            --surface-color: rgba(255, 255, 255, 0.65);
+            --surface-color-2: rgba(255, 255, 255, 0.85);
+            --surface-color-3: rgba(225, 238, 252, 0.95);
+            --text-color: #142436;
+            --muted-color: #4a637d;
+            --border-light: rgba(255, 255, 255, 0.7);
+            --border-medium: rgba(0, 150, 255, 0.18);
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(10, 18, 30, 0.6);
+            border-radius: 10px;
+        }
+
+        [data-theme="light"] ::-webkit-scrollbar-track {
+            background: rgba(220, 235, 250, 0.6);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+            border-radius: 10px;
+            border: 2px solid rgba(10, 18, 30, 0.4);
+            box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #28d8ff 0%, #4a8be5 100%);
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.8);
+        }
+
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: var(--accent-primary) rgba(10, 18, 30, 0.6);
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            transition: background var(--transition-smooth);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .mono {
+            font-family: var(--font-mono);
+            direction: ltr;
+            display: inline-block;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font-family: inherit;
+            color: inherit;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 12px 24px;
+            background: var(--surface-color-2);
+            backdrop-filter: var(--blur-md);
+            border-bottom: 1px solid var(--border-medium);
+            z-index: 40;
+        }
+
+        .brand-section {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .main-logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .date-display {
+            font-size: 0.72rem;
+            color: var(--accent-primary);
+            font-weight: 700;
+        }
+
+        .agency-input {
+            background: transparent;
+            border: 1px solid transparent;
+            color: var(--text-color);
+            font-weight: 800;
+            font-size: 1.15rem;
+            padding: 2px 8px;
+            width: 220px;
+        }
+
+        .top-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            font-size: 0.92rem;
+            padding: 9px 18px;
+            border-radius: var(--radius-md);
+            transition: var(--transition-smooth);
+            background: var(--surface-color-3);
+            border: 1px solid var(--border-medium);
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .btn.primary {
+            background: var(--accent-gradient);
+            color: #fff;
+            border: none;
+        }
+
+        .btn .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--muted-color);
+        }
+
+        .btn .dot.on {
+            background: var(--status-ok);
+            box-shadow: 0 0 10px var(--status-ok);
+        }
+
+        .shell {
+            flex: 1;
+            display: flex;
+            min-height: 0;
+        }
+
+        .content-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+            background: var(--surface-color);
+            backdrop-filter: var(--blur-md);
+            border-left: 1px solid var(--border-medium);
+        }
+
+        .nav-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+        }
+
+        .group-label {
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            color: var(--accent-primary);
+            padding: 12px 8px 6px;
+            direction: ltr;
+            text-align: right;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 14px;
+            border-radius: var(--radius-md);
+            margin-bottom: 6px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.94rem;
+            background: var(--surface-color-2);
+            border: 1px solid transparent;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-item:hover {
+            background: var(--surface-color-3);
+            transform: translateX(-4px);
+        }
+
+        .nav-item.active {
+            background: linear-gradient(90deg, rgba(0, 210, 255, 0.15), var(--surface-color-3));
+            border-color: var(--border-heavy);
+            color: var(--accent-primary);
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            min-height: 0;
+            position: relative;
+        }
+
+        .main-head {
+            padding: 22px 32px 18px;
+            border-bottom: 1px solid var(--border-medium);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            background: var(--surface-color);
+            backdrop-filter: var(--blur-md);
+            z-index: 20;
+        }
+
+        .mh-title {
+            font-size: 1.85rem;
+            font-weight: 900;
+            color: var(--text-color);
+        }
+
+        .canvas {
+            flex: 1;
+            overflow-y: auto;
+            padding: 32px;
+            z-index: 5;
+        }
+
+        .card {
+            background: var(--surface-color-2);
+            backdrop-filter: var(--blur-md);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 26px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--text-color);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-title::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            background: var(--accent-primary);
+        }
+
+        .tbl-wrap {
+            overflow-x: auto;
+            border-radius: var(--radius-md);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            min-width: 600px;
+        }
+
+        th {
+            background: rgba(0, 0, 0, 0.25);
+            color: var(--muted-color);
+            text-align: right;
+            padding: 14px 16px;
+            font-weight: 800;
+            font-size: 0.88rem;
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-light);
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        td.k {
+            font-weight: 800;
+            color: var(--accent-primary);
+        }
+
+        ul.check-list {
+            list-style: none;
+            display: grid;
+            gap: 12px;
+        }
+
+        ul.check-list li {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            padding: 14px 18px;
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-light);
+        }
+
+        ul.check-list input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--accent-primary);
+            cursor: pointer;
+        }
+
+        /* Drawer & Toast */
+        .scrim {
+            position: fixed;
+            inset: 0;
+            background: rgba(5, 10, 20, 0.72);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            z-index: 60;
+        }
+
+        .scrim.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .drawer {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: min(480px, 90vw);
+            background: var(--bg-color);
+            border-right: 1px solid var(--border-heavy);
+            transform: translateX(-100%);
+            transition: transform 0.4s;
+            z-index: 70;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .drawer.open {
+            transform: translateX(0);
+        }
+
+        .drawer-head {
+            padding: 32px;
+            border-bottom: 1px solid var(--border-medium);
+        }
+
+        .drawer-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px 32px;
+        }
+
+        .drawer-foot {
+            padding: 20px 32px;
+            border-top: 1px solid var(--border-medium);
+            display: flex;
+            gap: 12px;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: var(--surface-color-2);
+            border: 1px solid var(--accent-primary);
+            color: var(--text-color);
+            font-weight: 800;
+            padding: 12px 26px;
+            border-radius: var(--radius-lg);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+            z-index: 100;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        @media (max-width: 860px) {
+            .hamburger {
+                display: inline-flex;
+                width: 40px;
+                height: 40px;
+                border-radius: var(--radius-md);
+                background: var(--surface-color-2);
+                border: 1px solid var(--border-medium);
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 50;
+                transform: translateX(100%);
+                transition: transform 0.3s;
+                width: 280px;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .canvas {
+                padding: 20px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+
+    <div class="shell">
+        <aside class="sidebar" id="sidebar">
+        <!-- SIDEBAR HEADER -->
+        <div class="sidebar-header" style="padding: 24px 20px 16px; border-bottom: 1px solid var(--border-medium); margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <img src="https://image2url.com/r2/default/images/1771397424472-d9533f3b-9ef4-43c4-b8bf-bc44ff2ce1f5.png" alt="Logo" style="height: 32px; width: auto;">
+                <span style="font-weight: 900; font-size: 1.05rem; color: #fff;">مركز القيادة التسويقي</span>
+            </div>
+            <div id="sideSubBadge" style="display: inline-flex; align-items: center; gap: 6px; background: rgba(0, 210, 255, 0.08); padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(0, 210, 255, 0.2); font-size: 0.72rem; color: var(--accent-primary); font-weight: 700;">
+                <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--status-ok); display: inline-block;"></span>
+                <span id="sideSubPlanName">الباقة التجريبية 🛡️</span>
+            </div>
+        </div>
+            <nav class="nav-list">
+                <a href="index.html" class="nav-item">📊 الرئيسية / Overview</a>
+
+                
+                <a href="plan.html" class="nav-item">🚀 1. الخطة التسويقية</a>
+                <a href="content.html" class="nav-item">📝 2. استراتيجية المحتوى</a>
+                <a href="seo.html" class="nav-item active">🔍 3. تحسين SEO</a>
+                <a href="competitors.html" class="nav-item">⚔️ 4. دراسة المنافسين SWOT</a>
+                <a href="budget.html" class="nav-item">💰 5. حاسبة الميزانية</a>
+                <a href="canvas.html" class="nav-item">🧩 6. نموذج العمل (Lean Canvas)</a>
+                <a href="feasibility.html" class="nav-item">📈 7. دراسة الجدوى ROI</a>
+                <a href="kpi.html" class="nav-item">🎯 8. مؤشرات الأداء KPIs</a>
+
+                
+                <a href="prompts.html" class="nav-item">⚡ مكتبة البرومبتات (16)</a>
+            </nav>
+        </aside>
+
+        <div class="content-column">
+            <header class="topbar">
+        <div class="brand-section">
+            <button class="hamburger" id="hamburger"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5">
+                    <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg></button>
+            <img src="https://image2url.com/r2/default/images/1771397424472-d9533f3b-9ef4-43c4-b8bf-bc44ff2ce1f5.png"
+                alt="Logo" class="main-logo" onerror="this.style.display='none'">
+            <div>
+                <div class="date-display" id="currentDateDisplay">يتم التحميل...</div>
+                <div style="display:flex; align-items:center; gap:4px">
+                    <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-color); margin-left: 2px;">مرحباً،</span>
+                    <input class="agency-input" id="agencyName" value="وكالتك للتسويق" spellcheck="false">
+                </div>
+            </div>
+        </div>
+        <div class="top-actions">
+            <div class="search-box" style="position:relative; width:220px; margin-left:12px;">
+                <input type="text" id="topSearchInput" placeholder="بحث سريع... (Ctrl+K)" style="width:100%; padding:8px 12px 8px 32px; background:rgba(0,0,0,0.3); border:1px solid var(--border-medium); border-radius:10px; color:#fff; font-size:0.82rem; font-family:var(--font-main); outline:none; transition:0.3s;" onfocus="openSearchModal()" oninput="handleTopSearch(event)">
+                <span style="position:absolute; left:10px; top:50%; transform:translateY(-50%); font-size:0.85rem; color:var(--muted-color); pointer-events:none;">🔍</span>
+            </div>
+            <a href="../index.html" class="btn ghost">🌐 الموقع التعريفي</a>
+            <button class="btn primary" id="openProfile"><span class="dot" id="profileDot"></span><span>ملف المشروع
+                    DNA</span></button>
+            <button class="btn ghost" id="themeToggle" style="font-size:1.2rem;padding:8px 12px;display:none !important;">☀️</button>
+        </div>
+    </header>
+
+
+        <main class="main">
+            <div class="main-head">
+                <div>
+                    <div style="font-size:0.75rem; color:var(--accent-primary); font-family:var(--font-mono)">MODULE 03
+                        — SEARCH ENGINE OPTIMIZATION</div>
+                    <h1 class="mh-title" id="pageTitle">استراتيجية تحسين محركات البحث SEO</h1>
+                </div>
+            </div>
+
+            <div class="canvas">
+                <div class="card">
+                    <div class="card-title">خريطة الكلمات المفتاحية الاستراتيجية (Keyword Mapping)</div>
+                    <div class="tbl-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>نوع الكلمة المفتاحية</th>
+                                    <th>أمثلة ومقترحات البحث</th>
+                                    <th>المنافسة</th>
+                                    <th>نية البحث (Search Intent)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="k">قصيرة الذيل (Short-Tail)</td>
+                                    <td>أفضل خدمات مجال مشروعك في منطقتك</td>
+                                    <td>عالية جداً</td>
+                                    <td>معلوماتية واستكشافية عامة</td>
+                                </tr>
+                                <tr>
+                                    <td class="k">طويلة الذيل (Long-Tail)</td>
+                                    <td>كيف تختار الخدمة المناسبة لمشروعك وبأعلى جودة؟</td>
+                                    <td>متوسطة إلى منخفضة</td>
+                                    <td>مقارنة وتقييم الحلول المتاحة</td>
+                                </tr>
+                                <tr>
+                                    <td class="k">شرائية مباشرة (Transactional)</td>
+                                    <td>حجز / شراء الخدمة فوراً بأسعار تنافسية</td>
+                                    <td>منخفضة المنافسة العضوية</td>
+                                    <td>نية شراء وحجز مؤكدة</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">قائمة فحص التحسين الداخلي التفاعلية (On-Page Checklist)</div>
+                    <ul class="check-list">
+                        <li>
+                            <input type="checkbox" id="chk1" checked>
+                            <label for="chk1"><strong>عنوان الصفحة (Title Tag):</strong> دمج الكلمة المفتاحية الرئيسية
+                                مع اسم العلامة التجاري في أول 60 حرفاً.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk2" checked>
+                            <label for="chk2"><strong>وصف الميتا (Meta Description):</strong> كتابة وصف بين 150-160 حرف
+                                يحفز النقر (CTR) ويحتوي على دعوة عمل CTA.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk3">
+                            <label for="chk3"><strong>جوجل للأعمال (Google Business Profile):</strong> توثيق الحساب
+                                المحلي ورسائل العملاء لضمان ظهور الخرائط المحلية.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk4">
+                            <label for="chk4"><strong>عناقيد المحتوى (Content Clusters):</strong> إنشاء مقال محوري شامل
+                                (Pillar Page) يترتبط بـ 8 مقالات فرعية تدعمه.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk5">
+                            <label for="chk5"><strong>الربط الداخلي (Internal Links):</strong> إدراج 3-5 روابط داخلية في
+                                كل مقال لربط الخدمات والصفحات ذات الصلة.</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        </div>
+    </div>
+
+    <div class="scrim" id="scrim"></div>
+    <aside class="drawer" id="drawer">
+        <div class="drawer-head">
+            <h2 style="font-size:1.4rem; font-weight:900">ملف المشروع DNA</h2>
+        </div>
+        <div class="drawer-body" id="drawerBody"></div>
+        <div class="drawer-foot">
+            <button class="btn ghost" onclick="state.profile={}; buildDrawer();">تفريغ</button>
+            <button class="btn primary" onclick="saveProfileFromDrawer()" style="flex:2">حفظ وتطبيق</button>
+        </div>
+    </aside>
+    <div class="toast" id="toast"></div>
+
+    <script>
+        "use strict";
+        const STORE_KEY = "marketingOS.v4";
+        const FIELDS = [{ key: "brand", label: "اسم العلامة / المشروع" }, { key: "field", label: "النشاط / المجال" }, { key: "region", label: "الدولة / التوقيت" }];
+        const state = { profile: {}, agency: "وكالتك للتسويق", theme: "dark" };
+        function $(id) { return document.getElementById(id); }
+        function toast(msg) { const t = $('toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2500); }
+        function load() {
+            try {
+                const raw = localStorage.getItem(STORE_KEY);
+                if (raw) { const d = JSON.parse(raw); if (d.profile) state.profile = d.profile; if (d.agency) state.agency = d.agency; if (d.theme) state.theme = d.theme; }
+            } catch (e) { }
+        }
+        function save() { try { localStorage.setItem(STORE_KEY, JSON.stringify({ profile: state.profile, agency: state.agency, theme: state.theme })); } catch (e) { } }
+        function updatePageTitle() {
+            if (state.profile.brand) $('pageTitle').textContent = `استراتيجية SEO والكلمات المفتاحية — ${state.profile.brand}`;
+            $('profileDot').classList.toggle('on', Object.keys(state.profile).length > 0);
+        }
+        function buildDrawer() {
+            $('drawerBody').innerHTML = FIELDS.map(f => {
+                const val = state.profile[f.key] || "";
+                return `<div class="field" style="margin-bottom:16px"><label style="display:block;font-weight:800;margin-bottom:6px">${f.label}</label><input data-k="${f.key}" value="${val}" style="width:100%;padding:10px;border-radius:8px;background:rgba(0,0,0,0.25);border:1px solid var(--border-medium);color:var(--text-color)"></div>`;
+            }).join("");
+        }
+        function openDrawer() { buildDrawer(); $('scrim').classList.add('open'); $('drawer').classList.add('open'); }
+        function closeDrawer() { $('scrim').classList.remove('open'); $('drawer').classList.remove('open'); }
+        function saveProfileFromDrawer() {
+            document.querySelectorAll('#drawerBody [data-k]').forEach(el => {
+                if (el.value.trim()) state.profile[el.dataset.k] = el.value.trim(); else delete state.profile[el.dataset.k];
+            });
+            save(); closeDrawer(); updatePageTitle(); toast("تم حفظ وتحديث ملف المشروع");
+        }
+        $('agencyName').oninput = e => { state.agency = e.target.value; save(); };
+        $('openProfile').onclick = openDrawer;
+        $('scrim').onclick = closeDrawer;
+        $('themeToggle').onclick = () => {
+            state.theme = state.theme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', state.theme);
+            $('themeToggle').textContent = state.theme === 'light' ? '🌙' : '☀️';
+            save();
+        };
+        $('hamburger').onclick = () => $('sidebar').classList.toggle('open');
+        (function init() {
+            load();
+            document.documentElement.setAttribute('data-theme', state.theme);
+            $('themeToggle').textContent = state.theme === 'light' ? '🌙' : '☀️';
+            $('agencyName').value = state.agency;
+            updatePageTitle();
+            try {
+                const now = new Date();
+                const greg = new Intl.DateTimeFormat('ar-EG', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }).format(now);
+                let hijriDisplay = "";
+                try {
+                    const hijri = new Intl.DateTimeFormat('ar-SA-u-ca-islamic', { year: 'numeric', month: 'long', day: 'numeric' }).format(now);
+                    const currentYear = now.getFullYear().toString();
+                    const isDuplicate = hijri.includes(currentYear) || hijri.includes('يوليو') || hijri.includes('July') || hijri.includes('2026') || hijri.includes('٢٠٢٦');
+                    if (!isDuplicate) {
+                        hijriDisplay = ` &bull; ${hijri}`;
+                    }
+                } catch (e) {}
+                $('currentDateDisplay').innerHTML = greg + hijriDisplay;
+            } catch (e) { }
+        })();
+    
+        // Update dynamic sidebar subscription badge
+        (function updateSidebarSub() {
+            const subPlanEl = document.getElementById('sideSubPlanName');
+            if (subPlanEl) {
+                try {
+                    const raw = localStorage.getItem("marketingOS.v4");
+                    if (raw) {
+                        const d = JSON.parse(raw);
+                        if (d.subscription && d.subscription.plan) {
+                            subPlanEl.textContent = d.subscription.plan;
+                        } else {
+                            subPlanEl.textContent = "الباقة التجريبية 🛡️";
+                        }
+                    } else {
+                        subPlanEl.textContent = "الباقة التجريبية 🛡️";
+                    }
+                } catch(e) {
+                    subPlanEl.textContent = "الباقة التجريبية 🛡️";
+                }
+            }
+        })();
+
+        // Force Dark Mode always
+        if (typeof state !== 'undefined' && state) {
+            state.theme = 'dark';
+            document.documentElement.setAttribute('data-theme', 'dark');
+            if (typeof save === 'function') save();
+        }
+
+        // Search Modal Logic
+        const SEARCH_ITEMS = [
+            { title: "الرئيسية / لوحة القيادة", url: "index.html", desc: "نظرة عامة على مركز القيادة التسويقي وحالة ملف المشروع DNA.", icon: "📊", badge: "الرئيسية" },
+            { title: "الخطة التسويقية الاستراتيجية", url: "plan.html", desc: "بناء قمع المبيعات (Funnel) وتحديد أهداف SMART لـ 90 يوماً.", icon: "🚀", badge: "وحدة استشارية" },
+            { title: "استراتيجية المحتوى 30 يوماً", url: "content.html", desc: "توليد أفكار صناعة المحتوى وجدول النشر التلقائي المخصص.", icon: "📝", badge: "وحدة استشارية" },
+            { title: "تحسين محركات البحث SEO", url: "seo.html", desc: "تحديد الكلمات المفتاحية الذكية وقائمة فحص التحسين الداخلي لجوجل.", icon: "🔍", badge: "وحدة استشارية" },
+            { title: "دراسة المنافسين SWOT", url: "competitors.html", desc: "تحليل نقاط القوة والضعف والفرص والتهديدات لمنافسيك.", icon: "⚔️", badge: "وحدة استشارية" },
+            { title: "حاسبة الميزانية والـ ROAS", url: "budget.html", desc: "توزيع الميزانية الإعلانية ومحاكاة نسب العائد المتوقع على المنصات.", icon: "💰", badge: "حاسبة ذكية" },
+            { title: "نموذج العمل Lean Canvas", url: "canvas.html", desc: "تخطيط شرائح العملاء والقيم الفريدة وهيكل التكاليف بشكل سريع.", icon: "🧩", badge: "وحدة استشارية" },
+            { title: "دراسة الجدوى المالية ROI", url: "feasibility.html", desc: "حساب نقطة التعادل، تكاليف التشغيل والأرباح الصافية المتوقعة.", icon: "📈", badge: "حاسبة ذكية" },
+            { title: "مؤشرات الأداء KPIs", url: "kpi.html", desc: "تحديد وتتبع أهداف المبيعات، الزيارات ومعدلات التحويل للمشروع.", icon: "🎯", badge: "وحدة استشارية" },
+            { title: "مكتبة البرومبتات الذكية", url: "prompts.html", desc: "16 برومبت تسويقي محقون تلقائياً ببيانات DNA مشروعك للنسخ المباشر.", icon: "⚡", badge: "مكتبة ذكية" }
+        ];
+
+        let selectedSearchIndex = 0;
+        let currentSearchResults = [];
+
+        window.openSearchModal = function() {
+            const backdrop = document.getElementById('searchModalBackdrop');
+            if (backdrop) {
+                backdrop.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+                const modalInput = document.getElementById('modalSearchInput');
+                const topInput = document.getElementById('topSearchInput');
+                if (modalInput && topInput) {
+                    modalInput.value = topInput.value;
+                    modalInput.focus();
+                    performSearch(modalInput.value);
+                }
+            }
+        };
+
+        window.closeSearchModal = function() {
+            const backdrop = document.getElementById('searchModalBackdrop');
+            if (backdrop) {
+                backdrop.style.display = 'none';
+                document.body.style.overflow = '';
+                const topInput = document.getElementById('topSearchInput');
+                if (topInput) topInput.value = '';
+            }
+        };
+
+        window.handleTopSearch = function(event) {
+            openSearchModal();
+        };
+
+        window.performSearch = function(query) {
+            const listEl = document.getElementById('searchResultsList');
+            if (!listEl) return;
+            
+            const cleanQuery = query.trim().toLowerCase();
+            if (!cleanQuery) {
+                currentSearchResults = [...SEARCH_ITEMS];
+            } else {
+                currentSearchResults = SEARCH_ITEMS.filter(item => 
+                    item.title.toLowerCase().includes(cleanQuery) || 
+                    item.desc.toLowerCase().includes(cleanQuery) ||
+                    item.badge.toLowerCase().includes(cleanQuery)
+                );
+            }
+            
+            selectedSearchIndex = 0;
+            renderSearchResults();
+        };
+
+        function renderSearchResults() {
+            const listEl = document.getElementById('searchResultsList');
+            if (!listEl) return;
+            
+            if (currentSearchResults.length === 0) {
+                listEl.innerHTML = `
+                    <div style="text-align:center; padding:30px; color:var(--muted-color); font-size:0.9rem;">
+                        لا توجد نتائج بحث مطابقة.. جرب كلمة أخرى!
+                    </div>`;
+                return;
+            }
+            
+            listEl.innerHTML = currentSearchResults.map((item, idx) => `
+                <a href="${item.url}" class="search-result-item ${idx === selectedSearchIndex ? 'selected' : ''}" data-index="${idx}">
+                    <div class="search-result-item-info">
+                        <div class="search-result-icon">${item.icon}</div>
+                        <div>
+                            <div class="search-result-title">${item.title}</div>
+                            <div class="search-result-desc">${item.desc}</div>
+                        </div>
+                    </div>
+                    <div class="search-result-badge">${item.badge}</div>
+                </a>
+            `).join('');
+            
+            // Attach click listeners to selection
+            document.querySelectorAll('.search-result-item').forEach(el => {
+                el.addEventListener('mouseenter', function() {
+                    selectedSearchIndex = parseInt(this.getAttribute('data-index'));
+                    document.querySelectorAll('.search-result-item').forEach((item, idx) => {
+                        item.classList.toggle('selected', idx === selectedSearchIndex);
+                    });
+                });
+            });
+        }
+
+        // Global Key Listener for Search Modal
+        document.addEventListener('keydown', function(event) {
+            const backdrop = document.getElementById('searchModalBackdrop');
+            const isOpen = backdrop && backdrop.style.display === 'flex';
+            
+            // Toggle Search with Ctrl+K or Cmd+K
+            if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
+                event.preventDefault();
+                if (isOpen) closeSearchModal();
+                else openSearchModal();
+                return;
+            }
+            
+            if (!isOpen) return;
+            
+            if (event.key === 'Escape') {
+                closeSearchModal();
+            } else if (event.key === 'ArrowDown') {
+                event.preventDefault();
+                selectedSearchIndex = (selectedSearchIndex + 1) % currentSearchResults.length;
+                renderSearchResults();
+                // Scroll selected item into view
+                const selectedEl = document.querySelector('.search-result-item.selected');
+                if (selectedEl) selectedEl.scrollIntoView({ block: 'nearest' });
+            } else if (event.key === 'ArrowUp') {
+                event.preventDefault();
+                selectedSearchIndex = (selectedSearchIndex - 1 + currentSearchResults.length) % currentSearchResults.length;
+                renderSearchResults();
+                // Scroll selected item into view
+                const selectedEl = document.querySelector('.search-result-item.selected');
+                if (selectedEl) selectedEl.scrollIntoView({ block: 'nearest' });
+            } else if (event.key === 'Enter') {
+                event.preventDefault();
+                if (currentSearchResults[selectedSearchIndex]) {
+                    window.location.href = currentSearchResults[selectedSearchIndex].url;
+                    closeSearchModal();
+                }
+            }
+        });
+</script>
+
+    <!-- SEARCH MODAL OVERLAY -->
+    <div class="search-modal-backdrop" id="searchModalBackdrop" onclick="if(event.target===this)closeSearchModal()" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(4,8,16,0.7); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:100px;">
+        <div class="search-modal-card" style="width:90%; max-width:550px; background:linear-gradient(145deg, rgba(16, 24, 48, 0.98), rgba(8, 12, 24, 0.99)); border:1px solid var(--border-glow); border-radius:20px; box-shadow:0 20px 50px rgba(0,0,0,0.8); overflow:hidden; direction:rtl; display:flex; flex-direction:column; animation: searchModalFade 0.25s ease-out;">
+            <div style="padding:16px 20px; border-bottom:1px solid var(--border-medium); display:flex; align-items:center; gap:12px; background:rgba(0,0,0,0.2)">
+                <span style="font-size:1.15rem; color:var(--accent-primary)">🔍</span>
+                <input type="text" id="modalSearchInput" placeholder="اكتب للبحث في الأدوات والوحدات..." style="flex:1; background:transparent; border:none; color:#fff; font-size:1.05rem; font-weight:700; font-family:var(--font-main); outline:none;" oninput="performSearch(this.value)">
+                <button onclick="closeSearchModal()" style="color:var(--muted-color); background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:0.75rem; transition:0.3s; padding:0; line-height:1;" onhover="this.style.background='rgba(255,75,106,0.15)'">✕</button>
+            </div>
+            <div id="searchResultsList" style="max-height:360px; overflow-y:auto; padding:10px;">
+                <!-- Dynamically populated search items -->
+            </div>
+            <div style="padding:12px 20px; background:rgba(0,0,0,0.3); border-top:1px solid var(--border-medium); display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; color:var(--muted-color);">
+                <span>استخدم <b>Enter</b> للذهاب للملف المختار</span>
+                <span>اضغط <b>ESC</b> للإغلاق</span>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        @keyframes searchModalFade {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .search-result-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            border-radius: 12px;
+            color: var(--text-color);
+            text-decoration: none;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid transparent;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+        .search-result-item:hover, .search-result-item.selected {
+            background: rgba(0, 210, 255, 0.08);
+            border-color: rgba(0, 210, 255, 0.25);
+            transform: translateX(-4px);
+        }
+        .search-result-item-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .search-result-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: 0.2s;
+        }
+        .search-result-item:hover .search-result-icon, .search-result-item.selected .search-result-icon {
+            background: var(--accent-cyan);
+            color: #000;
+        }
+        .search-result-title {
+            font-weight: 700;
+            font-size: 0.92rem;
+            color: #fff;
+            text-align: right;
+        }
+        .search-result-desc {
+            font-size: 0.76rem;
+            color: var(--muted-color);
+            margin-top: 2px;
+            text-align: right;
+        }
+        .search-result-badge {
+            font-size: 0.68rem;
+            padding: 2px 8px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.05);
+            color: var(--muted-color);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .search-result-item:hover .search-result-badge, .search-result-item.selected .search-result-badge {
+            background: rgba(0,210,255,0.15);
+            color: var(--accent-cyan);
+            border-color: rgba(0,210,255,0.3);
+        }
+    </style>
+
+</body>
+
+</html>
