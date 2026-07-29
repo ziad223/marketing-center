@@ -602,7 +602,7 @@
                 <div class="date-display" id="currentDateDisplay">يتم التحميل...</div>
                 <div style="display:flex; align-items:center; gap:4px">
                     <span style="font-weight: 800; font-size: 1.15rem; color: var(--text-color); margin-left: 2px;">مرحباً،</span>
-                    <input class="agency-input" id="agencyName" value="وكالتك للتسويق" spellcheck="false">
+                    <span class="agency-name-text" id="agencyName" style="font-weight: 800; font-size: 1.15rem; color: var(--text-color);">وكالتك للتسويق</span>
                 </div>
             </div>
         </div>
@@ -744,7 +744,7 @@
         }
 
         $('calcBudget').addEventListener('input', updateBudget);
-        $('agencyName').oninput = e => { state.agency = e.target.value; save(); };
+        // $('agencyName').oninput = e => { state.agency = e.target.value; save(); };
         $('openProfile').onclick = openDrawer;
         $('scrim').onclick = closeDrawer;
         $('themeToggle').onclick = () => {
@@ -759,7 +759,7 @@
             load();
             document.documentElement.setAttribute('data-theme', state.theme);
             $('themeToggle').textContent = state.theme === 'light' ? '🌙' : '☀️';
-            $('agencyName').value = state.agency;
+            $('agencyName').textContent = state.agency || "وكالتك للتسويق";
             updatePageTitle();
             try {
                 const now = new Date();
